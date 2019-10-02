@@ -6,6 +6,7 @@ const port = process.env.PORT || 8080;
 const App = express();
 // App.use(express.static(__dirname + '/public'));
 App.use(bodyParser.json());
+App.use(bodyParser.urlencoded({extended: true, }));
 App.use(cors());
 App.get('/', (req, res)=>{
     // res.render();
