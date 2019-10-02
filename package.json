@@ -8,5 +8,8 @@
   "keywords": [],
   "author": "kompanycoder",
   "license": "ISC",
-  "description": "Development environment dashboard"
+  "description": "Development environment dashboard",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
 }
