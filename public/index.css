@@ -1,0 +1,29 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+li,a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.706);
+}
+
+ul {
+    text-decoration: none;
+}
+
+.container-main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+    flex-direction: row;
+}
+.navbar {
+    width: 100%;
+    text-decoration: none;
+    background: #000000b4;
+    height: 60px;
+    display: inline-block;
+}

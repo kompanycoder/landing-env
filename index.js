@@ -16,14 +16,20 @@ App.get('/', (req, res)=>{
     //     console.log(results);
     // });
     // res.render()
-    res.sendFile('/index.html', (err, results)=>{
+    res.status(200).sendFile('/index.html', (err, results)=>{
         if(err) return err;
         results;
         console.log(results);
     });
 });
 
-
+App.get('/api/dashboard', ()=>{
+    res.status(200).json({
+        msg: "dashboard Connected!!",
+        apiRequestCount: 39219,
+        admin: true
+    });
+});
 App.listen(port,()=>{
     console.log("Dev env initialised on :"+ port);
 })
