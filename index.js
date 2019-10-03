@@ -23,9 +23,9 @@ App.get('/', (req, res)=>{
     });
 });
 
-App.get('/api/dashboard', ()=>{
+App.get('/api/dashboard', (req, res)=>{
     res.status(200).json({
-        msg: "dashboard Connected!!",
+        msg: "dashboard Connected!! Welcome @kompanycoder",
         apiRequestCount: 39219,
         admin: true
     });
