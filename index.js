@@ -4,7 +4,7 @@ const cors = require("cors");
 // const path = require('path');
 const port = process.env.PORT || 8080;
 const App = express();
-App.use(express.static(__dirname + '/public'));
+App.use(express.static(__dirname + '/'));
 App.use(bodyParser.json());
 App.use(bodyParser.urlencoded({extended: true}));
 App.use(cors());
@@ -32,6 +32,7 @@ App.get('/api/dashboard', (req, res)=>{
 });
 App.listen(port,()=>{
     console.log("Dev env initialised on :"+ port);
+    console.log(express.static(__dirname + '/'));
 })
 
 module.exports = App;

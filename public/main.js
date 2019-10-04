@@ -3,3 +3,4 @@ const dateCustom = ()=>{
     let dateMan = new Date();
     console.log(dateMan);
 };
+dateCustom();
