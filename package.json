@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "master-dev": "concurrently \"npm run client-dev\" \"npm run server-dev\"",
+    "client-dev":"npm run start --prefix client",
+    "server-dev": "npm run dev-serve --prefix server"
   },
   "keywords": [],
   "author": "kompanycoder",
@@ -12,5 +15,13 @@
   "dependencies": {
     "concurrently": "^5.0.2"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kompanycoder/landing-env.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kompanycoder/landing-env/issues"
+  },
+  "homepage": "https://github.com/kompanycoder/landing-env#readme"
 }
