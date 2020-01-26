@@ -9,6 +9,8 @@
   "author": "kompanycoder",
   "license": "ISC",
   "description": "Development environment dashboard",
-  "dependencies": {},
+  "dependencies": {
+    "concurrently": "^5.0.2"
+  },
   "devDependencies": {}
 }
