@@ -5,15 +5,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "master-dev": "concurrently \"npm run client-dev\" \"npm run server-dev\"",
-    "client-dev":"npm run start --prefix client",
-    "server-dev": "npm run dev-serve --prefix server"
+    "client-dev": "npm run start --prefix client",
+    "server-dev": "npm run dev-serve --prefix server",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "kompanycoder",
   "license": "ISC",
   "description": "Development environment dashboard",
   "dependencies": {
-    "concurrently": "^5.0.2"
+    "concurrently": "^5.0.2",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {},
   "repository": {
@@ -23,5 +26,6 @@
   "bugs": {
     "url": "https://github.com/kompanycoder/landing-env/issues"
   },
-  "homepage": "https://github.com/kompanycoder/landing-env#readme"
+  "homepage": "https://github.com/kompanycoder/landing-env#readme",
+  "snyk": true
 }
